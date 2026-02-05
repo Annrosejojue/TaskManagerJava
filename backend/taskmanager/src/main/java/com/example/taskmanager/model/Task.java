@@ -20,5 +20,25 @@ public class Task {
         this.completed = completed;
     }
 
+    public Object getTitle() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getTitle'");
+    }
+
+    public void setTitle(Object title2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setTitle'");
+    }
+
+    public Object isCompleted() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isCompleted'");
+    }
+
+    public void setCompleted(Object completed2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setCompleted'");
+    }
+
     // getters and setters
 }
