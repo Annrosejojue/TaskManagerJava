@@ -1,6 +1,10 @@
 package com.example.taskmanager.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tasks")
@@ -20,25 +24,27 @@ public class Task {
         this.completed = completed;
     }
 
-    public Object getTitle() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getTitle'");
+    public Long getId() {
+        return id;
     }
 
-    public void setTitle(Object title2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setTitle'");
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public Object isCompleted() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isCompleted'");
+    public String getTitle() {
+        return title;
     }
 
-    public void setCompleted(Object completed2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setCompleted'");
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    // getters and setters
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
 }
